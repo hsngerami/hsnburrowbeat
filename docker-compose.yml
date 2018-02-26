@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  hsnburrowbeat:
+    environment:
+      - BEATS_VERSION=6.2.1
+    volumes:
+      - ./hsnburrowbeat.yml:/go/src/github.com/hsngerami/hsnburrowbeat/hsnburrowbeat.yml
+    build: .

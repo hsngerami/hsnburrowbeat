@@ -1,0 +1,20 @@
+- key: hsnburrowbeat
+  title: hsnburrowbeat
+  description:
+  fields:
+    - name: cluster
+      type: keyword
+    - name: group
+      type: keyword
+    - name: topic
+      fields:
+        - name: name
+          type: text
+        - name: size
+          type: long
+        - name: partition_count
+          type: long
+        - name: lag
+          type: long
+        - name: burrow_status
+          type: object

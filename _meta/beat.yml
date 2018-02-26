@@ -1,0 +1,10 @@
+################### Hsnburrowbeat Configuration Example #########################
+
+############################# Hsnburrowbeat ######################################
+
+hsnburrowbeat:
+  # Defines how often an event is sent to the output
+  period: 5s
+  host: "burrow host"
+  port: "port"
+  cluster: "your cluster name"

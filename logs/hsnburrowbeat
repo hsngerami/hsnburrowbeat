@@ -1,0 +1,1888 @@
+2018-02-21T13:52:24.083+0330	INFO	instance/beat.go:468	Home path: [/home/hossein/go/src/github.com/hsngerami/hsnburrowbeat] Config path: [/home/hossein/go/src/github.com/hsngerami/hsnburrowbeat] Data path: [/home/hossein/go/src/github.com/hsngerami/hsnburrowbeat/data] Logs path: [/home/hossein/go/src/github.com/hsngerami/hsnburrowbeat/logs]
+2018-02-21T13:52:24.083+0330	DEBUG	[beat]	instance/beat.go:495	Beat metadata path: /home/hossein/go/src/github.com/hsngerami/hsnburrowbeat/data/meta.json
+2018-02-21T13:52:24.084+0330	INFO	instance/beat.go:475	Beat UUID: b5acb48a-0d7b-48fc-bf9a-3ab8261be187
+2018-02-21T13:52:24.084+0330	INFO	instance/beat.go:213	Setup Beat: hsnburrowbeat; Version: 6.2.2
+2018-02-21T13:52:24.084+0330	DEBUG	[beat]	instance/beat.go:230	Initializing output plugins
+2018-02-21T13:52:24.084+0330	DEBUG	[processors]	processors/processor.go:49	Processors: 
+2018-02-21T13:52:24.084+0330	INFO	elasticsearch/client.go:145	Elasticsearch url: http://94.130.135.118:19200
+2018-02-21T13:52:24.084+0330	INFO	pipeline/module.go:76	Beat name: HS-Shaya
+2018-02-21T13:52:24.084+0330	INFO	instance/beat.go:301	hsnburrowbeat start running.
+2018-02-21T13:52:24.084+0330	INFO	beater/hsnburrowbeat.go:44	hsnburrowbeat is running! Hit CTRL-C to stop it.
+2018-02-21T13:52:24.084+0330	INFO	[monitoring]	log/log.go:97	Starting metrics logging every 30s
+2018-02-21T13:52:29.379+0330	DEBUG	[publish]	pipeline/processor.go:275	Publish event: {
+  "@timestamp": "2018-02-21T10:22:29.373Z",
+  "@metadata": {
+    "beat": "hsnburrowbeat",
+    "type": "doc",
+    "version": "6.2.2"
+  },
+  "cluster": "kavan",
+  "group": "WebDiscoverProcess",
+  "beat": {
+    "version": "6.2.2",
+    "name": "HS-Shaya",
+    "hostname": "HS-Shaya"
+  },
+  "total_partitions": 100,
+  "total_lag": 0,
+  "burrow_status": {
+    "partitions": [
+      {
+        "owner": "",
+        "start": {
+          "offset": 2631,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "topic": "web_seed_topic_1",
+        "partition": 0,
+        "status": "OK",
+        "end": {
+          "offset": 2633,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "current_lag": 0,
+        "partition": 1,
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2653
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2654,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1
+      },
+      {
+        "owner": "",
+        "status": "OK",
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 2,
+        "start": {
+          "offset": 2635,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2636
+        }
+      },
+      {
+        "start": {
+          "offset": 2701,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "partition": 3,
+        "status": "OK",
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2701
+        }
+      },
+      {
+        "owner": "",
+        "start": {
+          "lag": 0,
+          "offset": 2650,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 4,
+        "status": "OK",
+        "end": {
+          "offset": 2652,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1
+      },
+      {
+        "start": {
+          "offset": 2722,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 5,
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2722
+        }
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 6,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2600,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2600
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "start": {
+          "offset": 2686,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2687,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "partition": 7,
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "current_lag": 0,
+        "complete": 1,
+        "partition": 8,
+        "owner": "",
+        "start": {
+          "offset": 2728,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2729,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        }
+      },
+      {
+        "partition": 9,
+        "owner": "",
+        "end": {
+          "lag": 0,
+          "offset": 2580,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "offset": 2580,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "complete": 1
+      },
+      {
+        "end": {
+          "offset": 2601,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "topic": "web_seed_topic_1",
+        "partition": 10,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2601,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "start": {
+          "offset": 2706,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "topic": "web_seed_topic_1",
+        "end": {
+          "lag": 0,
+          "offset": 2707,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "partition": 11,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "end": {
+          "offset": 2661,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "partition": 12,
+        "status": "OK",
+        "start": {
+          "offset": 2660,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        }
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2749,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2749,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "partition": 13,
+        "owner": ""
+      },
+      {
+        "start": {
+          "offset": 2743,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2743
+        },
+        "owner": "",
+        "status": "OK",
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 14
+      },
+      {
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "end": {
+          "lag": 0,
+          "offset": 2724,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "partition": 15,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2724
+        }
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "start": {
+          "lag": 0,
+          "offset": 2669,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2670
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "status": "OK",
+        "partition": 16
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 17,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2627,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2627
+        },
+        "complete": 1
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2648
+        },
+        "end": {
+          "offset": 2650,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "partition": 18,
+        "status": "OK"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2686,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2688
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "owner": "",
+        "partition": 19
+      },
+      {
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 20,
+        "status": "OK",
+        "start": {
+          "offset": 2638,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "owner": "",
+        "end": {
+          "lag": 0,
+          "offset": 2640,
+          "timestamp": 1.519208497777e+12
+        }
+      },
+      {
+        "owner": "",
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 21,
+        "status": "OK",
+        "start": {
+          "offset": 2662,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2663,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        }
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "start": {
+          "offset": 2719,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2720
+        },
+        "complete": 1,
+        "partition": 22,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 23,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2711,
+          "timestamp": 1.519207957249e+12
+        },
+        "complete": 1,
+        "owner": "",
+        "end": {
+          "offset": 2712,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "start": {
+          "offset": 2682,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2684
+        },
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "complete": 1,
+        "partition": 24
+      },
+      {
+        "start": {
+          "offset": 2659,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "offset": 2659,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 25
+      },
+      {
+        "partition": 26,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2663,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2664
+        }
+      },
+      {
+        "partition": 27,
+        "status": "OK",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2654
+        },
+        "topic": "web_seed_topic_1",
+        "complete": 1,
+        "owner": "",
+        "start": {
+          "offset": 2654,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0
+      },
+      {
+        "end": {
+          "offset": 2653,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "partition": 28,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2650,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": ""
+      },
+      {
+        "start": {
+          "offset": 2639,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2641,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "partition": 29,
+        "owner": "",
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "status": "OK"
+      },
+      {
+        "partition": 30,
+        "owner": "",
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2743
+        },
+        "end": {
+          "offset": 2743,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "end": {
+          "offset": 2621,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 31,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2619,
+          "timestamp": 1.519207957249e+12
+        },
+        "complete": 1
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "end": {
+          "offset": 2618,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "partition": 32,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2618
+        }
+      },
+      {
+        "status": "OK",
+        "end": {
+          "lag": 0,
+          "offset": 2749,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "current_lag": 0,
+        "partition": 33,
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2749
+        }
+      },
+      {
+        "partition": 34,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2559,
+          "timestamp": 1.519207957249e+12
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "end": {
+          "offset": 2560,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0
+      },
+      {
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2593,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2593
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 35
+      },
+      {
+        "end": {
+          "offset": 2614,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 36,
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2613,
+          "timestamp": 1.519207957249e+12
+        }
+      },
+      {
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK",
+        "partition": 37,
+        "start": {
+          "offset": 2693,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2693
+        }
+      },
+      {
+        "end": {
+          "offset": 2655,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2655,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 38
+      },
+      {
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2706
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 39,
+        "owner": "",
+        "end": {
+          "lag": 0,
+          "offset": 2706,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "status": "OK"
+      },
+      {
+        "partition": 40,
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2642
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "start": {
+          "lag": 0,
+          "offset": 2640,
+          "timestamp": 1.519207957249e+12
+        },
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2687
+        },
+        "topic": "web_seed_topic_1",
+        "partition": 41,
+        "complete": 1,
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2686
+        },
+        "current_lag": 0
+      },
+      {
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2689,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "offset": 2690,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 42,
+        "owner": ""
+      },
+      {
+        "owner": "",
+        "current_lag": 0,
+        "partition": 43,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2669,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2670,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "start": {
+          "lag": 0,
+          "offset": 2635,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "offset": 2636,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "partition": 44,
+        "status": "OK",
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": ""
+      },
+      {
+        "start": {
+          "offset": 2660,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "partition": 45,
+        "end": {
+          "offset": 2662,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 46,
+        "current_lag": 0,
+        "end": {
+          "offset": 2705,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2702,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        }
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "lag": 0,
+          "offset": 2636,
+          "timestamp": 1.519208497777e+12
+        },
+        "partition": 47,
+        "start": {
+          "offset": 2635,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "complete": 1
+      },
+      {
+        "partition": 48,
+        "status": "OK",
+        "start": {
+          "offset": 2686,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2686,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": ""
+      },
+      {
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 49,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2746,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2746,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0
+      },
+      {
+        "complete": 1,
+        "partition": 50,
+        "status": "OK",
+        "end": {
+          "lag": 0,
+          "offset": 2721,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "start": {
+          "offset": 2720,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        }
+      },
+      {
+        "partition": 51,
+        "owner": "",
+        "start": {
+          "offset": 2724,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2725,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "status": "OK"
+      },
+      {
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 52,
+        "end": {
+          "offset": 2640,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2639,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        }
+      },
+      {
+        "owner": "",
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 53,
+        "status": "OK",
+        "start": {
+          "offset": 2670,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2671,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        }
+      },
+      {
+        "partition": 54,
+        "owner": "",
+        "complete": 1,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2701,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "offset": 2704,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "owner": "",
+        "end": {
+          "lag": 0,
+          "offset": 2693,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 55,
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2693
+        },
+        "current_lag": 0
+      },
+      {
+        "current_lag": 0,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2779,
+          "timestamp": 1.519207957249e+12
+        },
+        "topic": "web_seed_topic_1",
+        "partition": 56,
+        "end": {
+          "offset": 2780,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1
+      },
+      {
+        "end": {
+          "offset": 2656,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "topic": "web_seed_topic_1",
+        "partition": 57,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2654,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "status": "OK",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2729
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 58,
+        "owner": "",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2729
+        }
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "start": {
+          "offset": 2705,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "current_lag": 0,
+        "partition": 59,
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "offset": 2706,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        }
+      },
+      {
+        "owner": "",
+        "start": {
+          "lag": 0,
+          "offset": 2645,
+          "timestamp": 1.519207957249e+12
+        },
+        "partition": 60,
+        "status": "OK",
+        "end": {
+          "offset": 2645,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "partition": 61,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2632,
+          "timestamp": 1.519207957249e+12
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2633
+        },
+        "current_lag": 0
+      },
+      {
+        "current_lag": 0,
+        "partition": 62,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2690,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "offset": 2691,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": ""
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 63,
+        "end": {
+          "lag": 0,
+          "offset": 2678,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2678,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0
+      },
+      {
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2748
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2748
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 64,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "status": "OK",
+        "start": {
+          "offset": 2703,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2704,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "partition": 65,
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "start": {
+          "offset": 2707,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK",
+        "end": {
+          "offset": 2708,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "partition": 66
+      },
+      {
+        "owner": "",
+        "start": {
+          "offset": 2600,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2601,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "partition": 67,
+        "topic": "web_seed_topic_1",
+        "status": "OK"
+      },
+      {
+        "status": "OK",
+        "end": {
+          "offset": 2697,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 68,
+        "start": {
+          "offset": 2697,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "owner": ""
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2648
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2650,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "partition": 69,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "start": {
+          "offset": 2731,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2732,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 70,
+        "complete": 1,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "end": {
+          "lag": 0,
+          "offset": 2738,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "owner": "",
+        "start": {
+          "offset": 2736,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 71,
+        "status": "OK"
+      },
+      {
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2721,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 72,
+        "end": {
+          "offset": 2721,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1
+      },
+      {
+        "end": {
+          "lag": 0,
+          "offset": 2595,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "partition": 73,
+        "start": {
+          "offset": 2595,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "status": "OK",
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": ""
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "start": {
+          "offset": 2754,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2755,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "partition": 74,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 75,
+        "status": "OK",
+        "start": {
+          "offset": 2593,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2594,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "owner": "",
+        "current_lag": 0
+      },
+      {
+        "partition": 76,
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2693
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "end": {
+          "lag": 0,
+          "offset": 2694,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "owner": ""
+      },
+      {
+        "partition": 77,
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2627
+        },
+        "end": {
+          "offset": 2630,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "end": {
+          "lag": 0,
+          "offset": 2657,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "partition": 78,
+        "status": "OK",
+        "start": {
+          "offset": 2656,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "current_lag": 0
+      },
+      {
+        "partition": 79,
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2675
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2675
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "complete": 1
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "offset": 2658,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2661,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "partition": 80,
+        "owner": ""
+      },
+      {
+        "partition": 81,
+        "status": "OK",
+        "end": {
+          "offset": 2628,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "start": {
+          "offset": 2627,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0
+      },
+      {
+        "end": {
+          "offset": 2784,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "start": {
+          "offset": 2784,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "partition": 82,
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 83,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2667
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2668
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "end": {
+          "offset": 2731,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2731
+        },
+        "current_lag": 0,
+        "partition": 84,
+        "owner": ""
+      },
+      {
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2720
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 85,
+        "start": {
+          "offset": 2718,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "owner": "",
+        "status": "OK"
+      },
+      {
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2589,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2592,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "partition": 86
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 87,
+        "owner": "",
+        "start": {
+          "lag": 0,
+          "offset": 2688,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "status": "OK",
+        "end": {
+          "offset": 2689,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        }
+      },
+      {
+        "status": "OK",
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2764
+        },
+        "complete": 1,
+        "partition": 88,
+        "owner": "",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2764
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "status": "OK",
+        "end": {
+          "offset": 2702,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "start": {
+          "offset": 2701,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "partition": 89
+      },
+      {
+        "status": "OK",
+        "current_lag": 0,
+        "partition": 90,
+        "start": {
+          "offset": 2722,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2723,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": ""
+      },
+      {
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2682
+        },
+        "complete": 1,
+        "end": {
+          "offset": 2683,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 91
+      },
+      {
+        "end": {
+          "offset": 2675,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "partition": 92,
+        "status": "OK",
+        "start": {
+          "lag": 0,
+          "offset": 2674,
+          "timestamp": 1.519207957249e+12
+        },
+        "current_lag": 0,
+        "owner": ""
+      },
+      {
+        "start": {
+          "lag": 0,
+          "offset": 2612,
+          "timestamp": 1.519207957249e+12
+        },
+        "end": {
+          "lag": 0,
+          "offset": 2613,
+          "timestamp": 1.519208497777e+12
+        },
+        "current_lag": 0,
+        "partition": 93,
+        "owner": "",
+        "status": "OK",
+        "complete": 1,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "status": "OK",
+        "end": {
+          "offset": 2784,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "partition": 94,
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2781
+        }
+      },
+      {
+        "topic": "web_seed_topic_1",
+        "partition": 95,
+        "owner": "",
+        "end": {
+          "offset": 2666,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1,
+        "status": "OK",
+        "start": {
+          "timestamp": 1.519207957249e+12,
+          "lag": 0,
+          "offset": 2664
+        }
+      },
+      {
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "owner": "",
+        "status": "OK",
+        "complete": 1,
+        "partition": 96,
+        "start": {
+          "offset": 2695,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "timestamp": 1.519208497777e+12,
+          "lag": 0,
+          "offset": 2695
+        }
+      },
+      {
+        "end": {
+          "lag": 0,
+          "offset": 2700,
+          "timestamp": 1.519208497777e+12
+        },
+        "complete": 1,
+        "start": {
+          "lag": 0,
+          "offset": 2700,
+          "timestamp": 1.519207957249e+12
+        },
+        "partition": 97,
+        "owner": "",
+        "status": "OK",
+        "current_lag": 0,
+        "topic": "web_seed_topic_1"
+      },
+      {
+        "owner": "",
+        "partition": 98,
+        "topic": "web_seed_topic_1",
+        "status": "OK",
+        "start": {
+          "offset": 2620,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        },
+        "end": {
+          "offset": 2620,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "complete": 1
+      },
+      {
+        "complete": 1,
+        "end": {
+          "offset": 2638,
+          "timestamp": 1.519208497777e+12,
+          "lag": 0
+        },
+        "current_lag": 0,
+        "topic": "web_seed_topic_1",
+        "partition": 99,
+        "owner": "",
+        "status": "OK",
+        "start": {
+          "offset": 2636,
+          "timestamp": 1.519207957249e+12,
+          "lag": 0
+        }
+      }
+    ],
+    "partition_count": 100,
+    "maxlag": {
+      "start": {
+        "lag": 0,
+        "offset": 2631,
+        "timestamp": 1.519207957249e+12
+      },
+      "current_lag": 0,
+      "topic": "web_seed_topic_1",
+      "partition": 0,
+      "owner": "",
+      "status": "OK",
+      "end": {
+        "offset": 2633,
+        "timestamp": 1.519208497777e+12,
+        "lag": 0
+      },
+      "complete": 1
+    },
+    "cluster": "kavan",
+    "group": "WebDiscoverProcess",
+    "status": "OK",
+    "complete": 1,
+    "totallag": 0
+  },
+  "type": "consumer_group",
+  "count": 1
+}
+2018-02-21T13:52:29.379+0330	INFO	beater/hsnburrowbeat.go:137	Consumer group event sent
+2018-02-21T13:52:29.379+0330	DEBUG	[publish]	pipeline/processor.go:275	Publish event: {
+  "@timestamp": "2018-02-21T10:22:29.379Z",
+  "@metadata": {
+    "beat": "hsnburrowbeat",
+    "type": "doc",
+    "version": "6.2.2"
+  },
+  "count": 1,
+  "cluster": "kavan",
+  "group": "WebDiscoverProcess",
+  "topic": {
+    "name": "web_seed_topic_1",
+    "size": 267723,
+    "partitions": 100,
+    "lag": 0
+  },
+  "beat": {
+    "name": "HS-Shaya",
+    "hostname": "HS-Shaya",
+    "version": "6.2.2"
+  },
+  "type": "topic"
+}
+2018-02-21T13:52:29.379+0330	INFO	beater/hsnburrowbeat.go:206	Topic event sent
+2018-02-21T13:52:30.159+0330	DEBUG	[service]	service/service.go:33	Received sigterm/sigint, stopping
+2018-02-21T13:52:30.159+0330	INFO	instance/beat.go:308	hsnburrowbeat stopped.
+2018-02-21T13:52:30.162+0330	INFO	[monitoring]	log/log.go:132	Total non-zero metrics	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":0,"time":0},"total":{"ticks":30,"time":34,"value":30},"user":{"ticks":30,"time":34}},"info":{"ephemeral_id":"1fe0b6d7-623e-4ebf-948e-af02b59d72a9","uptime":{"ms":6082}},"memstats":{"gc_next":4194304,"memory_alloc":2017104,"memory_total":3565672,"rss":22003712}},"libbeat":{"config":{"module":{"running":0}},"output":{"type":"elasticsearch"},"pipeline":{"clients":0,"events":{"active":2,"published":2,"total":2}}},"system":{"cpu":{"cores":4},"load":{"1":0.11,"15":0.49,"5":0.37,"norm":{"1":0.0275,"15":0.1225,"5":0.0925}}}}}}
+2018-02-21T13:52:30.162+0330	INFO	[monitoring]	log/log.go:133	Uptime: 6.083047249s
+2018-02-21T13:52:30.162+0330	INFO	[monitoring]	log/log.go:110	Stopping metrics logging.
