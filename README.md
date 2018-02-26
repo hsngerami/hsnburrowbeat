@@ -115,7 +115,7 @@ make package
 ```
 
 ## Docker
-Do config hsnburrowbeat.yml
+Change file hsnburrowbeat.yml
 ```
 docker-compose up -d
 ```
