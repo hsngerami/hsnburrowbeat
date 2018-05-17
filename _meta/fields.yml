@@ -6,6 +6,8 @@
       type: keyword
     - name: group
       type: keyword
+    - name: "@timestamp"
+      type: date
     - name: topic
       fields:
         - name: name
